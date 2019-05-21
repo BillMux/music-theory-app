@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="ImageSelect" errors="0" tests="1" failures="1" time="0.029" timestamp="2019-05-21T21:48:35">
+  <testcase classname="ImageSelect" name="encountered a declaration exception" time="0.028"><failure type="expect" message="ReferenceError: ImageSelect is not defined">ReferenceError: ImageSelect is not defined
+    at jasmine.Suite.&amp;lt;anonymous&amp;gt; (/Users/bill/projects/music-theory-app/spec/imageSelectSpec.js:4:21)
+    at jasmine.Env.describe_ (/Users/bill/projects/music-theory-app/node_modules/jasmine-node/lib/jasmine-node/jasmine-1.3.1.js:884:21)
+    at jasmine.Env.describe (/Users/bill/projects/music-theory-app/node_modules/jasmine-node/lib/jasmine-node/jasmine-1.3.1.js:869:15)
+    at describe (/Users/bill/projects/music-theory-app/node_modules/jasmine-node/lib/jasmine-node/jasmine-1.3.1.js:629:27)
+    at Object.&amp;lt;anonymous&amp;gt; (/Users/bill/projects/music-theory-app/spec/imageSelectSpec.js:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:734:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:745:10)
+    at Module.load (internal/modules/cjs/loader.js:626:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:566:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:558:3)</failure></testcase>
+</testsuite>
+</testsuites>

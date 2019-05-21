@@ -1,0 +1,32 @@
+{
+  "name": "music-theory-app",
+  "version": "1.0.0",
+  "description": "'An educational tool to help people learn how to read sheet music'",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jasmine-node": "^1.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/jasmine-node/bin/jasmine-node --verbose --junitreport spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillMux/music-theory-app.git"
+  },
+  "keywords": [
+    "music",
+    "education",
+    "game",
+    "quiz"
+  ],
+  "author": "BillMux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillMux/music-theory-app/issues"
+  },
+  "homepage": "https://github.com/BillMux/music-theory-app#readme"
+}
