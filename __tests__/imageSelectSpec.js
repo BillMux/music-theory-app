@@ -10,6 +10,5 @@ describe('ImageSelect', function() {
 
   it('exists', function() {
     expect(imageSelect.testAnswer).toEqual(true);
-    expect(imageSelect.message).toEqual('Hello world');
   });
 });
