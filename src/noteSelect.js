@@ -10,13 +10,14 @@ NoteSelect.prototype.selectAnswer = function() {
 };
 
 NoteSelect.prototype.isCorrect = function(answer, entry) {
-  var sharpFlatOrNatural = entry.substr(1);
-  if(sharpFlatOrNatural === ' natural') {
-    return answer === entry.substr(0, 1)
-  } else if(sharpFlatOrNatural === ' sharp') {
-    return answer.substr(0, 2) === entry[0] + '#'
-  } else if(sharpFlatOrNatural === ' flat') {
-    return answer.substr(0, 2) === entry[0] + '♭'
+  letter = entry.substr(0, 1);
+  switch(entry.substr(1)) {
+    case ' natural':
+      return answer === letter;
+    case ' sharp':
+      return answer === letter + '#';
+    case ' flat':
+      return answer === letter + '♭';
   };
 };
 
