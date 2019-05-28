@@ -23,9 +23,19 @@ describe('NoteSelect', function() {
     });
   });
 
-  it('returns "true" when answer is correct', function() {
-    expect(noteSelect.isCorrect('F#', 'F sharp')).toEqual(true)
-    expect(noteSelect.isCorrect('E', 'E natural')).toEqual(true)
-    expect(noteSelect.isCorrect('B♭', 'B flat')).toEqual(true)
+  describe('#isCorrect', function(){
+    it('returns "true" when answer is correct', function() {
+      expect(noteSelect.isCorrect('F#', 'F sharp')).toEqual(true)
+      expect(noteSelect.isCorrect('E', 'E natural')).toEqual(true)
+      expect(noteSelect.isCorrect('B♭', 'B flat')).toEqual(true)
+    });
+
+    it ('returns "false" when answer is incorrect', function() {
+      expect(noteSelect.isCorrect('F#', 'G flat')).toEqual(false)
+      expect(noteSelect.isCorrect('E', 'B sharp')).toEqual(false)
+      expect(noteSelect.isCorrect('B♭', 'A natural')).toEqual(false)
+    });
   });
+
+
 });
