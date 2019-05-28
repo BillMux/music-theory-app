@@ -9,14 +9,23 @@ describe('NoteSelect', function() {
   });
 
   it('should start with note list', function() {
+    expect(noteSelect.list.length).toEqual(17)
     expect(noteSelect.list).toEqual([
-      'A', 'A#', 'B', 'C', 'C#', 'D#', 'E', 'F', 'F#', 'G', 'G#'
+      'A', 'A#', 'B♭', 'B', 'C', 'C#', 'D♭', 'D', 'D#', 'E♭', 'E', 'F', 'F#', 'G♭', 'G', 'G#', 'A♭'
     ]);
   });
 
-  it('should randomly select note to be answer', function() {
-    for(var i = 0; i < 10; i++) {
-      expect(noteSelect.list).toContain(noteSelect.selectAnswer());
-    };
+  describe('#selectAnswer', function() {
+    it('should randomly select note to be answer', function() {
+      for(var i = 0; i < 10; i++) {
+        expect(noteSelect.list).toContain(noteSelect.selectAnswer());
+      };
+    });
+  });
+
+  it('returns "true" when answer is correct', function() {
+    expect(noteSelect.isCorrect('F#', 'F sharp')).toEqual(true)
+    expect(noteSelect.isCorrect('E', 'E natural')).toEqual(true)
+    expect(noteSelect.isCorrect('B♭', 'B flat')).toEqual(true)
   });
 });
