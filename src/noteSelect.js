@@ -10,15 +10,11 @@ NoteSelect.prototype.selectAnswer = function() {
 };
 
 NoteSelect.prototype.isCorrect = function(answer, entry) {
-  letter = entry.substr(0, 1);
-  switch(entry.substr(1)) {
-    case ' natural':
-      return answer === letter;
-    case ' sharp':
-      return answer === letter + '#';
-    case ' flat':
-      return answer === letter + '♭';
-  };
+  if(entry.charAt(1) === '♮') {
+    console.log(entry.substr(1))
+    return entry.charAt(0) === answer
+  }
+  return answer === entry
 };
 
 module.exports = NoteSelect;
