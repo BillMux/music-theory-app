@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="NoteSelect" errors="0" tests="1" failures="0" time="0.013" timestamp="2019-06-18T08:53:30">
+  <testcase classname="NoteSelect" name="should start with note list" time="0.005"></testcase>
+</testsuite>
+<testsuite name="NoteSelect.#selectAnswer" errors="0" tests="1" failures="0" time="0.001" timestamp="2019-06-18T08:53:30">
+  <testcase classname="NoteSelect.#selectAnswer" name="should randomly select note to be answer" time="0"></testcase>
+</testsuite>
+<testsuite name="NoteSelect.#isCorrect" errors="0" tests="2" failures="0" time="0.003" timestamp="2019-06-18T08:53:30">
+  <testcase classname="NoteSelect.#isCorrect" name="returns &amp;quot;true&amp;quot; when answer is correct" time="0.002"></testcase>
+  <testcase classname="NoteSelect.#isCorrect" name="returns &amp;quot;false&amp;quot; when answer is incorrect" time="0"></testcase>
+</testsuite>
+</testsuites>
