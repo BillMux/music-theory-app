@@ -1,3 +1,4 @@
 function startWindowVanish() {
-  document.querySelector('#start_window').style.display = 'none';
+  document.getElementById('start_window').style.display = 'none';
+  document.getElementById('quiz').style.display = 'block';
 }
