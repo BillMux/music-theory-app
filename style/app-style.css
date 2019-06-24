@@ -1,3 +1,12 @@
+body {
+  font-family: monospace;
+}
+
+#answer {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
 #start_window {
   font-family: monospace;
   text-align: center;
@@ -48,7 +57,7 @@ button {
 }
 
 .answer_select {
-  
+
 }
 
 .start_game:hover {

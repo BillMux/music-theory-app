@@ -20,19 +20,20 @@
     <h2>What note is this?</h2>
     <img src="images/treble-b-natural.png">
     <p class="answer_select">
-      <button type="note_options" name="A">A</button>
-      <button type="note_options" name="B">B</button>
-      <button type="note_options" name="C">C</button>
-      <button type="note_options" name="D">D</button>
-      <button type="note_options" name="E">E</button>
-      <button type="note_options" name="F">F</button>
-      <button type="note_options" name="G">G</button>
+      <button type="note_options" name="A" onclick="getAnswer('A')">A</button>
+      <button type="note_options" name="B" onclick="getAnswer('B')">B</button>
+      <button type="note_options" name="C" onclick="getAnswer('C')">C</button>
+      <button type="note_options" name="D" onclick="getAnswer('D')">D</button>
+      <button type="note_options" name="E" onclick="getAnswer('E')">E</button>
+      <button type="note_options" name="F" onclick="getAnswer('F')">F</button>
+      <button type="note_options" name="G" onclick="getAnswer('G')">G</button>
       <select class="accidental_list">
         <option value="natural">♮</option>
         <option value="flat">♭</option>
         <option value="sharp">#</option>
       </select>
     </p>
+    <p id="answer"></p>
   </div>
  </body>
 </html>
