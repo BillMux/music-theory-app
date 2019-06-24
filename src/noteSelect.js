@@ -10,10 +10,7 @@ NoteSelect.prototype.selectAnswer = function() {
 };
 
 NoteSelect.prototype.isCorrect = function(answer, entry) {
-  if(entry.charAt(1) === '♮') {
-    console.log(entry.substr(1))
-    return entry.charAt(0) === answer
-  }
+  if(entry.charAt(1) === '♮') { return entry.charAt(0) === answer }
   return answer === entry
 };
 
