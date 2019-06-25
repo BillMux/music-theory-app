@@ -4,9 +4,12 @@ function startWindowVanish() {
 }
 
 function getAnswer(answer) {
-  document.getElementById('answer').innerHTML = answer;
+  var symbol = document.getElementById('accidental_list').value;
+  document.getElementById('answer').innerHTML = answer + symbol;
 }
 
-function getAccidental(acc) {
-  document.getElementById('answer_accidental').innerHTML = acc;
+function getAccidental() {
+  var symbol = document.getElementById('accidental_list').value;
+  var letter = document.getElementById('answer').innerHTML[0];
+  document.getElementById('answer').innerHTML = letter + symbol;
 }

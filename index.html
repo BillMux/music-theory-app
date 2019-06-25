@@ -27,13 +27,13 @@
       <button class="choice" type="note_options" name="E" onclick="getAnswer('E')">E</button>
       <button class="choice" type="note_options" name="F" onclick="getAnswer('F')">F</button>
       <button class="choice" type="note_options" name="G" onclick="getAnswer('G')">G</button>
-      <select class="accidental_list">
-        <option value="natural" onclick="getAccidental('♮')">♮</option>
-        <option value="flat" onclick="getAccidental('♭')">♭</option>
-        <option value="sharp" onclick="getAccidental('#')">#</option>
+      <select id="accidental_list" onchange="getAccidental()">
+        <option value="♮">♮</option>
+        <option value="♭">♭</option>
+        <option value="#">#</option>
       </select>
     </p>
-    <p id="answer"></p><p id="answer_accidental"></p>
+    <p id="answer"></p>
   </div>
  </body>
 </html>
