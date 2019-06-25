@@ -2,7 +2,7 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <script src="app.js"></script>
+  <script src="./app.js"></script>
   <script src="./src/noteSelect.js"></script>
   <link rel="stylesheet" type="text/css" href="./style/app-style.css">
   <title>Music Theory App</title>
@@ -18,7 +18,7 @@
   <div id="quiz">
     <h1>Question n:</h1>
     <h2>What note is this?</h2>
-    <img src="images/treble-b-natural.png">
+    <img id="question_image"src="images/treble-b-natural.png">
     <p class="answer_select">
       <button class="choice" name="A" onclick="getAnswer('A')">A</button>
       <button class="choice" name="B" onclick="getAnswer('B')">B</button>
@@ -34,9 +34,8 @@
       </select>
     </p>
     <p id="answer">...</p>
-    <button id="submit" name="submit">Submit Answer</button>
+    <button id="submit" name="submit" onclick="submit()">Submit Answer</button>
     <div id="correct">
-      
     </div>
   </div>
  </body>

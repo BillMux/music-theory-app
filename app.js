@@ -15,5 +15,19 @@ function getAccidental() {
 }
 
 function submit() {
-  
-}
+  var path = document.getElementById('question_image').src;
+  var filename = path.substring(path.lastIndexOf('/') + 1, path.indexOf('.'));
+  var fileWords = filename.split('-');
+  var submission = document.getElementById('answer').innerHTML.split('')
+  var submissionNote = submission[0]
+  var submissionAccidental = submission[1]
+  var accidentalIsCorrect;
+  switch (fileWords[2]) {
+    case 'natural': accidentalIsCorrect = submissionAccidental == '♮';
+    case 'flat': accidentalIsCorrect = submissionAccidental == '♭';
+    case 'sharp': accidentalIsCorrect = submissionAccidental == '♯';
+  };
+  var noteIsCorrect = fileWords[1].toUpperCase() == submissionNote;
+  var isCorrect = noteIsCorrect && submissionAccidental == '♮';
+  console.log(isCorrect);
+};
