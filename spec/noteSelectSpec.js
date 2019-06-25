@@ -36,6 +36,4 @@ describe('NoteSelect', function() {
       expect(noteSelect.isCorrect('B♭', 'A♮')).toEqual(false)
     });
   });
-
-
 });
