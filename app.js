@@ -6,3 +6,7 @@ function startWindowVanish() {
 function getAnswer(answer) {
   document.getElementById('answer').innerHTML = answer;
 }
+
+function getAccidental(acc) {
+  document.getElementById('answer_accidental').innerHTML = acc;
+}

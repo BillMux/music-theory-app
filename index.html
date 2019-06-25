@@ -20,20 +20,20 @@
     <h2>What note is this?</h2>
     <img src="images/treble-b-natural.png">
     <p class="answer_select">
-      <button type="note_options" name="A" onclick="getAnswer('A')">A</button>
-      <button type="note_options" name="B" onclick="getAnswer('B')">B</button>
-      <button type="note_options" name="C" onclick="getAnswer('C')">C</button>
-      <button type="note_options" name="D" onclick="getAnswer('D')">D</button>
-      <button type="note_options" name="E" onclick="getAnswer('E')">E</button>
-      <button type="note_options" name="F" onclick="getAnswer('F')">F</button>
-      <button type="note_options" name="G" onclick="getAnswer('G')">G</button>
+      <button class="choice" type="note_options" name="A" onclick="getAnswer('A')">A</button>
+      <button class="choice" type="note_options" name="B" onclick="getAnswer('B')">B</button>
+      <button class="choice" type="note_options" name="C" onclick="getAnswer('C')">C</button>
+      <button class="choice" type="note_options" name="D" onclick="getAnswer('D')">D</button>
+      <button class="choice" type="note_options" name="E" onclick="getAnswer('E')">E</button>
+      <button class="choice" type="note_options" name="F" onclick="getAnswer('F')">F</button>
+      <button class="choice" type="note_options" name="G" onclick="getAnswer('G')">G</button>
       <select class="accidental_list">
-        <option value="natural">♮</option>
-        <option value="flat">♭</option>
-        <option value="sharp">#</option>
+        <option value="natural" onclick="getAccidental('♮')">♮</option>
+        <option value="flat" onclick="getAccidental('♭')">♭</option>
+        <option value="sharp" onclick="getAccidental('#')">#</option>
       </select>
     </p>
-    <p id="answer"></p>
+    <p id="answer"></p><p id="answer_accidental"></p>
   </div>
  </body>
 </html>

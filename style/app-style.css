@@ -19,7 +19,7 @@ body {
   align: center;
 }
 
-button {
+/* button {
   font-family: sans-serif;
   font-size: 40px;
   width: 50px;
@@ -27,10 +27,11 @@ button {
   margin: 1%;
   box-shadow: 0 3px 0 3px whitesmoke;
   border-radius: .2em;
-}
+} */
 
 .accidental_list {
   height: 50px;
+  width: 50px;
   font-size: 20px;
   font-family: sans-serif;
   font-weight: 700;
@@ -68,4 +69,47 @@ button {
   background-color: #B0E0E6;
   box-shadow: 0 5px #20B2AA;
   transform: translateY(4px);
+}
+
+.choice {
+  width: 50px;
+  height: 50px;
+  margin: .5%;
+	-moz-box-shadow: 3px 4px 0px 0px #899599;
+	-webkit-box-shadow: 3px 4px 0px 0px #899599;
+	box-shadow: 1px 2px 0px 0px #899599;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background: -moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background: -webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background: -o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background: -ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color: #ededed;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #gray;
+	display: inline-block;
+	cursor: pointer;
+	color: darkgrey;
+	font-family: Arial;
+	font-size: 35px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #e1e2ed;
+  text-align: center;
+}
+.choice:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background: -moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background: -webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background: -o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background: -ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color: #bab1ba;
+}
+.choice:active {
+	position: relative;
+	top: 1px;
+  box-shadow: none;
 }
