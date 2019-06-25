@@ -13,3 +13,7 @@ function getAccidental() {
   var letter = document.getElementById('answer').innerHTML[0];
   document.getElementById('answer').innerHTML = letter + symbol;
 }
+
+function submit() {
+  
+}

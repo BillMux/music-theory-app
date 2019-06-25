@@ -20,20 +20,24 @@
     <h2>What note is this?</h2>
     <img src="images/treble-b-natural.png">
     <p class="answer_select">
-      <button class="choice" type="note_options" name="A" onclick="getAnswer('A')">A</button>
-      <button class="choice" type="note_options" name="B" onclick="getAnswer('B')">B</button>
-      <button class="choice" type="note_options" name="C" onclick="getAnswer('C')">C</button>
-      <button class="choice" type="note_options" name="D" onclick="getAnswer('D')">D</button>
-      <button class="choice" type="note_options" name="E" onclick="getAnswer('E')">E</button>
-      <button class="choice" type="note_options" name="F" onclick="getAnswer('F')">F</button>
-      <button class="choice" type="note_options" name="G" onclick="getAnswer('G')">G</button>
+      <button class="choice" name="A" onclick="getAnswer('A')">A</button>
+      <button class="choice" name="B" onclick="getAnswer('B')">B</button>
+      <button class="choice" name="C" onclick="getAnswer('C')">C</button>
+      <button class="choice" name="D" onclick="getAnswer('D')">D</button>
+      <button class="choice" name="E" onclick="getAnswer('E')">E</button>
+      <button class="choice" name="F" onclick="getAnswer('F')">F</button>
+      <button class="choice" name="G" onclick="getAnswer('G')">G</button>
       <select id="accidental_list" onchange="getAccidental()">
         <option value="♮">♮</option>
         <option value="♭">♭</option>
-        <option value="#">#</option>
+        <option value="♯">♯</option>
       </select>
     </p>
-    <p id="answer"></p>
+    <p id="answer">...</p>
+    <button id="submit" name="submit">Submit Answer</button>
+    <div id="correct">
+      
+    </div>
   </div>
  </body>
 </html>
