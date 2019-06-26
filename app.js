@@ -19,15 +19,24 @@ function submit() {
   var filename = path.substring(path.lastIndexOf('/') + 1, path.indexOf('.'));
   var fileWords = filename.split('-');
   var submission = document.getElementById('answer').innerHTML.split('')
-  var submissionNote = submission[0]
-  var submissionAccidental = submission[1]
-  var accidentalIsCorrect;
-  switch (fileWords[2]) {
-    case 'natural': accidentalIsCorrect = submissionAccidental == '♮';
-    case 'flat': accidentalIsCorrect = submissionAccidental == '♭';
-    case 'sharp': accidentalIsCorrect = submissionAccidental == '♯';
+  var accidentalIsCorrect = checkAccidental(fileWords[2], submission[1])
+  var noteIsCorrect = fileWords[1].toUpperCase() === submission[0];
+  var isCorrect = noteIsCorrect && accidentalIsCorrect;
+  if (isCorrect) { console.log('correct'); } else { console.log('incorrect'); }
+};
+
+function checkAccidental(acc, sub) {
+  switch (acc) {
+    case 'natural': return sub === '♮';
+    case 'flat': return sub === '♭';
+    case 'sharp': return sub === '♯';
   };
-  var noteIsCorrect = fileWords[1].toUpperCase() == submissionNote;
-  var isCorrect = noteIsCorrect && submissionAccidental == '♮';
-  console.log(isCorrect);
+};
+
+function correct() {
+
+};
+
+function incorrect() {
+
 };
