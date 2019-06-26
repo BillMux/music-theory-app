@@ -18,11 +18,11 @@ function submit() {
   var path = document.getElementById('question_image').src;
   var filename = path.substring(path.lastIndexOf('/') + 1, path.indexOf('.'));
   var fileWords = filename.split('-');
-  var submission = document.getElementById('answer').innerHTML.split('')
-  var accidentalIsCorrect = checkAccidental(fileWords[2], submission[1])
+  var submission = document.getElementById('answer').innerHTML.split('');
+  var accidentalIsCorrect = checkAccidental(fileWords[2], submission[1]);
   var noteIsCorrect = fileWords[1].toUpperCase() === submission[0];
   var isCorrect = noteIsCorrect && accidentalIsCorrect;
-  if (isCorrect) { console.log('correct'); } else { console.log('incorrect'); }
+  if (isCorrect) { correct(); } else { incorrect(); };
 };
 
 function checkAccidental(acc, sub) {
