@@ -1,3 +1,5 @@
+'use strict';
+
 function NoteSelect() {
   this.list = [
     'A', 'A#', 'B♭', 'B', 'C', 'C#', 'D♭', 'D', 'D#',
