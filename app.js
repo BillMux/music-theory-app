@@ -34,9 +34,9 @@ function checkAccidental(acc, sub) {
 };
 
 function correct() {
-
+  // do something if correct
 };
 
 function incorrect() {
-
+// do something if incorrect
 };

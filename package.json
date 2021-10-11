@@ -11,6 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start"
     "test": "./node_modules/jasmine-node/bin/jasmine-node --verbose --junitreport spec"
   },
   "repository": {

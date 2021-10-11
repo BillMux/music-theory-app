@@ -15,5 +15,3 @@ NoteSelect.prototype.isCorrect = function(answer, entry) {
   if(entry.charAt(1) === '♮') { return entry.charAt(0) === answer }
   return answer === entry
 };
-
-module.exports = NoteSelect;
